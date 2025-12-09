@@ -19,9 +19,10 @@ sentence-transformers==2.7.0
 
 # Data / utilities
 pandas==2.3.3
-# Pydantic - pin to 2.7.4 for Python 3.11 compatibility (has pre-built wheels)
-# Using 2.7.4 instead of 2.8.0+ to avoid Python 3.13 build issues
-pydantic==2.7.4
+# Pydantic - use 2.9.0+ which includes pydantic-core 2.24.0+ with Python 3.13 wheels
+# pydantic-core 2.24.0+ has pre-built wheels for Python 3.13 (avoids build from source)
+pydantic>=2.9.0,<3.0.0
+pydantic-core>=2.24.0,<3.0.0
 python-dotenv==1.2.1
 tqdm==4.67.1
 requests==2.32.5
