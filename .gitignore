@@ -31,11 +31,11 @@ Thumbs.db
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Vectorstores (generated, can be recreated)
-chroma_pcos_db/
-chroma_patient_db/
-chroma_pcos_db_semantic/
-chroma_pcos_db_standard/
+# Vectorstores - needed for deployment, so NOT ignoring
+# chroma_pcos_db/
+# chroma_patient_db/
+# chroma_pcos_db_semantic/
+# chroma_pcos_db_standard/
 
 # Preprocessed data (can be regenerated)
 preprocessed_data/
