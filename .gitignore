@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+pcos_rag_env/
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Vectorstores (generated, can be recreated)
+chroma_pcos_db/
+chroma_patient_db/
+chroma_pcos_db_semantic/
+chroma_pcos_db_standard/
+
+# Preprocessed data (can be regenerated)
+preprocessed_data/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Docker volumes (local)
+chroma_pcos_db_semantic/
+chroma_patient_db/
+

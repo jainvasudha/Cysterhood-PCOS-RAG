@@ -1,0 +1,39 @@
+# LangChain core stack (compatible versions that work together)
+# Updated versions to resolve dependency conflicts
+langchain==0.1.14
+langchain-core==0.1.52
+langchain-community==0.0.32
+langchain-anthropic==0.1.7
+langchain-chroma==0.1.4
+langchain-huggingface==0.0.3
+langchain-text-splitters==0.0.1
+
+# ChromaDB - use compatible version for Streamlit Cloud
+chromadb==0.4.24
+# Ensure compatible numpy version (ChromaDB requirement)
+numpy<2.0.0,>=1.24.0
+
+# Local embeddings
+sentence-transformers==2.7.0
+# huggingface-hub version is managed by langchain-huggingface
+
+# Data / utilities
+pandas==2.3.3
+# Pydantic - use 2.8.0+ for Python 3.13 support, or pin to 2.7.4 for Python 3.11
+# For Python 3.11 (recommended): pydantic==2.7.4
+# For Python 3.13: pydantic>=2.8.0,<3.0.0
+pydantic>=2.8.0,<3.0.0
+python-dotenv==1.2.1
+tqdm==4.67.1
+requests==2.32.5
+
+# BM25 retriever (for hybrid search)
+rank-bm25==0.2.2
+
+# UI
+streamlit==1.52.1
+
+# Build dependencies (needed for Streamlit Cloud)
+setuptools>=65.0.0
+wheel
+packaging>=21.0
